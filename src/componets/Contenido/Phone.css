@@ -1,0 +1,34 @@
+.carousel {
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    margin: 0 auto;
+    transition: opacity 5.5s;
+}
+
+@media(max-width:350px) {
+    .Phone {
+        color: yellowgreen;
+        max-width: min-content;
+        align-items: normal;
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        height: 265px
+    }
+
+    .Carousel .Caption {
+        align-items: normal;
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 265px
+    }
+
+}
+
+@media (max-width: 700px) {
+    .parrafo {
+        display: none;
+    }
+}

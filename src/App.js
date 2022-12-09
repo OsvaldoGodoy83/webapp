@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './componets/Navbar/Navbar'
+import {Route, Routes } from 'react-router-dom';
+import Footer from './componets/Footer/Footer';
+import Formulario from './componets/Formulario/Formulario'
+import Contenido from './componets/Contenido/Phone';
+import Phone from './componets/Contenido/Phone';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar titulopagina="KODAK SMART HOME" color="gray"/>
+      <Routes>
+      
+      <Route path='/Phone' element={<Phone />}/>
+      <Route path='/Formulario' element={<Formulario />}/>
+      <Route path='/Contenido' element={<Contenido />}/>
+      </Routes>
+      <Footer/>
     </div>
   );
 }
